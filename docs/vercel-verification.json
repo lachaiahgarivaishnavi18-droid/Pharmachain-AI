@@ -1,0 +1,95 @@
+{
+  "url": "https://pharmachain-ai-chi.vercel.app",
+  "target": "production",
+  "status": "READY",
+  "database": "Neon PostgreSQL",
+  "synthetic": true,
+  "checks": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-B_t7DyWr.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/health",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/health/database",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/analytics/dashboard",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/inventory/batches",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/forecast/run",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/rl/recommend",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/rl/evaluate",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/agents/run",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/agents/executions?run_id=e04d7585-5eff-4f0c-9493-03dc62c5a74c",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/cold-chain/sensors",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/suppliers",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/export/inventory?format=csv",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/health/models",
+      "method": "GET",
+      "status": 200
+    }
+  ],
+  "product_count": 50,
+  "completed_agents": 10,
+  "forecast_model": "Random forest",
+  "recommendation_source": "Forecast-based baseline (trained candidate failed screening)",
+  "hosted_training_enabled": false,
+  "portable_ppo_parity_checks": 20
+}

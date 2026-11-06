@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "regions": ["sin1"],
+  "functions": {"api/index.py": {"maxDuration": 300, "includeFiles": "{demo-snapshot.json.gz,rl/models/*.json}"}},
+  "routes": [
+    {"src": "/api/(.*)", "dest": "/api/index.py"},
+    {"src": "/(docs|openapi.json)", "dest": "/api/index.py"},
+    {"handle": "filesystem"},
+    {"src": "/.*", "dest": "/index.html"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "product_id": 51,
+  "batch_id": 151,
+  "forecast_model": "Random forest",
+  "recommendation_source": "Forecast-based baseline (trained candidate failed screening)",
+  "quarantine_after_recovery": 60,
+  "purchase_order_status": "approved",
+  "workflow_run_id": "b358974c-b911-4846-9305-d5995fc7230a",
+  "completed_agents": 10,
+  "training_runs": [
+    {
+      "id": 1,
+      "status": "completed"
+    }
+  ],
+  "report_generated": true
+}

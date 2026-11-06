@@ -1,0 +1,58 @@
+{
+  "simulated": true,
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "results": [
+    {
+      "policy": "Threshold alerting",
+      "outside_steps_missed": 0.0,
+      "false_alert_steps": 0.0,
+      "detected_response_steps": 75.7,
+      "excursion_events": 1.7,
+      "mean_response_delay_minutes": 0.0,
+      "simulated_excursion_minutes": 1150.5,
+      "operational_response_cost": 398.8
+    },
+    {
+      "policy": "Statistical anomaly screening",
+      "outside_steps_missed": 57.7,
+      "false_alert_steps": 3.2,
+      "detected_response_steps": 18.0,
+      "excursion_events": 1.7,
+      "mean_response_delay_minutes": 9.75,
+      "simulated_excursion_minutes": 1150.5,
+      "operational_response_cost": 138.4
+    },
+    {
+      "policy": "Agentic rule-based response",
+      "outside_steps_missed": 0.0,
+      "false_alert_steps": 11.9,
+      "detected_response_steps": 4.0,
+      "excursion_events": 3.7,
+      "mean_response_delay_minutes": 0.0,
+      "simulated_excursion_minutes": 60.0,
+      "operational_response_cost": 223.3
+    },
+    {
+      "policy": "RL response",
+      "outside_steps_missed": 0.7,
+      "false_alert_steps": 0.0,
+      "detected_response_steps": 9.0,
+      "excursion_events": 8.4,
+      "mean_response_delay_minutes": 0.9666666666666668,
+      "simulated_excursion_minutes": 145.5,
+      "operational_response_cost": 159.0
+    }
+  ],
+  "limitations": "15-minute steps; simplified action-dependent temperature response. Zero response delay with zero detections is not evidence of successful detection. Statistical screening detects deviations rather than stability. No product disposition actions."
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://pharmachain-ai-chi.vercel.app",
+  "deployment_id": "dpl_ENF3QppSaVTkwpLKhh7CC3tGa4kR",
+  "project_id": "prj_WqHj5ESDpgikNdlGZl28ip5qNtx2",
+  "team_id": "team_yvrP1klnIyPrUUaIIX8iGzgw",
+  "target": "production",
+  "status": "READY",
+  "database_resource": "pharmachain-db",
+  "database_plan": "free_v3",
+  "function_region": "sin1",
+  "deployment_protection": "Vercel authentication retained",
+  "source": "reviewed local package; no Git commit available in initial repository"
+}

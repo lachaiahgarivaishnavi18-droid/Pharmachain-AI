@@ -1,0 +1,68 @@
+{
+  "simulated": true,
+  "evaluation_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "results": [
+    {
+      "policy": "Fixed reorder point",
+      "total_cost": 850.4159999999999,
+      "service_level": 0.999651308613459,
+      "stockout_rate": 0.0044444444444444444,
+      "average_inventory": 124.6711111111111,
+      "expiry_wastage": 0.0,
+      "replenishment_frequency": 11.2,
+      "constraint_violations": 0.0,
+      "demand_fulfillment": 2234.2
+    },
+    {
+      "policy": "Min-max",
+      "total_cost": 852.8960000000001,
+      "service_level": 1.0,
+      "stockout_rate": 0.0,
+      "average_inventory": 131.32666666666665,
+      "expiry_wastage": 0.0,
+      "replenishment_frequency": 10.4,
+      "constraint_violations": 0.0,
+      "demand_fulfillment": 2235.0
+    },
+    {
+      "policy": "EOQ",
+      "total_cost": 808.112,
+      "service_level": 0.9998205473306415,
+      "stockout_rate": 0.0022222222222222222,
+      "average_inventory": 94.44222222222223,
+      "expiry_wastage": 0.0,
+      "replenishment_frequency": 16.2,
+      "constraint_violations": 0.0,
+      "demand_fulfillment": 2234.6
+    },
+    {
+      "policy": "Forecast-based",
+      "total_cost": 2172.484,
+      "service_level": 1.0,
+      "stockout_rate": 0.0,
+      "average_inventory": 173.55111111111108,
+      "expiry_wastage": 0.0,
+      "replenishment_frequency": 87.8,
+      "constraint_violations": 0.0,
+      "demand_fulfillment": 2235.0
+    },
+    {
+      "policy": "RL policy",
+      "total_cost": 24446.360000000004,
+      "service_level": 0.08952056849448829,
+      "stockout_rate": 0.9177777777777777,
+      "average_inventory": 7.322222222222223,
+      "expiry_wastage": 0.0,
+      "replenishment_frequency": 0.0,
+      "constraint_violations": 0.0,
+      "demand_fulfillment": 200.0
+    }
+  ],
+  "limitations": "Identical held-out demand seeds; toy single-product model, not evidence of clinical or operational benefit. FEFO is used by every policy."
+}
